@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript | Guia Interativo</title>
+<meta name="description" content="Guia interativo de JavaScript: história, benefícios, curiosidades e exemplos de código.">
+
+<!-- Importando fontes e icones -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<a class="skip-link" href="#Inicio">Pular para o conteúdo</a>
+
+<header class="header">
+    <nav>
+        <div class="logo">
+            <span>JS</span>
+            JavaScript
+        </div>
+
+        <ul class="menu">
+            <li>
+                <a href="#Inicio" class="menu-link">
+                    <i class="fa-solid fa-house"></i>
+                    Início
+                </a>
+            </li>
+
+            <li class="menu-dropdown">
+                <button class="menu-btn" onclick="toggleMenu('sobreMenu')" aria-controls="sobreMenu" aria-expanded="false" aria-label="Abrir menu Sobre">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Sobre
+                </button>
+
+                <div class="dropdown" id="sobreMenu">
+                    <a href="#Introducao">Introdução</a>
+                    <a href="#Historia">História</a>
+                    <a href="#Importancia">Importância</a>
+                </div>
+            </li>
+
+            <li class="menu-dropdown">
+                <button class="menu-btn" onclick="toggleMenu('beneficiosMenu')" aria-controls="beneficiosMenu" aria-expanded="false" aria-label="Abrir menu Benefícios">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Benefícios
+                </button>
+
+                <div class="dropdown" id="beneficiosMenu">
+                    <a href="#Beneficios">Vantagens e Desvantagens</a>
+                </div>
+            </li>
+
+            <li class="menu-dropdown">
+                <button class="menu-btn" onclick="toggleMenu('outrosMenu')" aria-controls="outrosMenu" aria-expanded="false" aria-label="Abrir menu Outros">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                    Outros
+                </button>
+
+                <div class="dropdown" id="outrosMenu">
+                    <a href="#Curiosidade">Curiosidades</a>
+                    <a href="#Exemplos">Exemplos</a>
+                    <a href="#Conclusao">Conclusão</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="Inicio">
+    <div class="inicio-content">
+        <div>
+            <h1 class="inicio-title">
+                <span class="inicio-branco">O que é</span>
+                <span class="inicio-amarelo">JavaScript?</span>
+            </h1>
+
+            <div class="Texto">
+                <p>
+                    <span class="tx-yellow">JavaScript</span> é uma
+                    <span class="tx-purple">linguagem de programação</span> utilizada para criar
+                    <span class="tx-blue">páginas web dinâmicas e interativas</span>.
+                    Com ela é possível manipular elementos da página, validar formulários, criar animações,
+                    atualizar conteúdos em tempo real e desenvolver aplicações completas para navegadores e servidores.
+                    Atualmente, JavaScript é uma das três principais tecnologias da Web, juntamente com
+                    <span class="tx-orange">HTML</span> e <span class="tx-blue">CSS</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="inicio-img">
+            <video controls muted loop playsinline preload="metadata">
+            <source src="./Trabalho conslusão/JavaScript__Motor_Invisível.mp4" type="video/mp4">
+             Seu navegador não suporta vídeo.
+    </video>
+</div>
+    </div>
+</section>
+
+<section id="Introducao">
+    <div class="introducao-content">
+        <div>
+            <h2 class="Title">Introdução</h2>
+            <div class="Texto">
+                <p>
+                    Com o crescimento da internet na década de
+                    <span class="tx-green">1990</span>, surgiu a necessidade de tornar os sites mais interativos.
+                    Para atender essa demanda, foi criada a linguagem
+                    <span class="tx-yellow">JavaScript</span>.
+                    Hoje ela está presente em praticamente todos os navegadores modernos e é utilizada tanto no
+                    desenvolvimento <span class="tx-blue">Front-End</span> quanto no
+                    <span class="tx-purple">Back-End</span> por meio de tecnologias como
+                    <span class="tx-green">Node.js</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="Img_introducao">
+            <img loading="lazy" decoding="async" src="./Trabalho conslusão/Img_introdução.png" alt="Imagem tecnológica sobre JavaScript">
+        </div>
+    </div>
+</section>
+
+<section id="Historia">
+    <div class="historia-content">
+        <div class="Img_historia">
+            <img loading="lazy" decoding="async" src="./Trabalho conslusão/img_historia.png" alt="História do JavaScript">
+        </div>
+
+        <div>
+            <h2 class="Title">História</h2>
+            <div class="Texto">
+                <p>
+                    <span class="tx-yellow">JavaScript</span> foi criado em
+                    <span class="tx-green">1995</span> por Brendan Eich, engenheiro da Netscape Communications.
+                    A primeira versão da linguagem foi desenvolvida em apenas
+                    <span class="tx-orange">10 dias</span>. Inicialmente recebeu o nome de
+                    <span class="tx-blue">Mocha</span>, depois
+                    <span class="tx-purple">LiveScript</span> e, posteriormente,
+                    <span class="tx-yellow">JavaScript</span>.
+                    Em <span class="tx-green">1997</span>, a linguagem foi padronizada pela ECMA International
+                    através do padrão <span class="tx-blue">ECMAScript</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Importancia">
+    <div class="importancia-content">
+        <div>
+            <h2 class="Title">Importância</h2>
+            <div class="Texto">
+                <p>
+                    <span class="tx-yellow">JavaScript</span> é considerado uma das linguagens mais importantes
+                    da computação moderna porque possibilita a criação de
+                    <span class="tx-blue">aplicações web interativas</span>.
+                    Atualmente é utilizado em sites, sistemas empresariais, plataformas de streaming,
+                    redes sociais, jogos online, aplicativos móveis e
+                    <span class="tx-purple">serviços em nuvem</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="Img_importancia">
+            <img loading="lazy" decoding="async" src="./Trabalho conslusão/img_importancia.png" alt="Importância do JavaScript">
+        </div>
+    </div>
+</section>
+
+<section id="Beneficios">
+    <h2 class="Title">Benefícios</h2>
+
+    <div class="beneficios-grid">
+        <div class="card-beneficio">
+            <h3>Vantagens</h3>
+            <ul>
+                <li>✓ Fácil aprendizado para iniciantes.</li>
+                <li>✓ Executa diretamente no navegador.</li>
+                <li>✓ Grande comunidade de desenvolvedores.</li>
+                <li>✓ Compatível com diversos sistemas operacionais.</li>
+                <li>✓ Permite desenvolvimento Front-End e Back-End.</li>
+                <li>✓ Possui bibliotecas e frameworks como React, Angular e Vue.js.</li>
+                <li>✓ Atualizações constantes pelo padrão ECMAScript.</li>
+            </ul>
+        </div>
+
+        <div class="card-beneficio">
+            <h3>Desvantagens</h3>
+            <ul>
+                <li>✓ O código pode ser visualizado no navegador.</li>
+                <li>✓ Pode ter vulnerabilidades se usado incorretamente.</li>
+                <li>✓ Alguns navegadores interpretam funções de formas diferentes.</li>
+                <li>✓ Alguns erros aparecem apenas durante a execução.</li>
+                <li>✓ Pode ter limitações em operações muito pesadas.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="Curiosidade">
+    <h2 class="Title">Curiosidades</h2>
+
+    <div class="curiosidades-grid">
+        <div class="curiosidade-card">
+            <div class="numero">1</div>
+            <p>JavaScript foi desenvolvido em apenas 10 dias.</p>
+        </div>
+
+        <div class="curiosidade-card">
+            <div class="numero">2</div>
+            <p>Apesar do nome parecido, JavaScript e Java são linguagens diferentes.</p>
+        </div>
+
+        <div class="curiosidade-card">
+            <div class="numero">3</div>
+            <p>A linguagem foi inicialmente chamada de Mocha e depois LiveScript.</p>
+        </div>
+
+        <div class="curiosidade-card">
+            <div class="numero">4</div>
+            <p>O padrão oficial da linguagem chama-se ECMAScript.</p>
+        </div>
+
+        <div class="curiosidade-card">
+            <div class="numero">5</div>
+            <p>Mais de 90% dos sites utilizam JavaScript em alguma funcionalidade.</p>
+        </div>
+    </div>
+</section>
+
+<section id="Exemplos">
+    <h2 class="Title">Exemplos</h2>
+
+    <div class="exemplos-grid">
+        <div class="exemplo-card">
+            <h3>Exemplo 1 - Exibir mensagem</h3>
+<pre><code><span class="code-function">alert</span><span class="code-symbol">(</span><span class="code-string">"Olá, Mundo!"</span><span class="code-symbol">);</span></code></pre>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 2 - Mostrar texto no console</h3>
+<pre><code><span class="code-function">console.log</span><span class="code-symbol">(</span><span class="code-string">"Bem-vindo ao JavaScript!"</span><span class="code-symbol">);</span></code></pre>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 3 - Soma de números</h3>
+<pre><code><span class="code-keyword">let</span> <span class="code-variable">numero1</span> <span class="code-symbol">=</span> <span class="code-number">10</span><span class="code-symbol">;</span>
+<span class="code-keyword">let</span> <span class="code-variable">numero2</span> <span class="code-symbol">=</span> <span class="code-number">20</span><span class="code-symbol">;</span>
+
+<span class="code-function">console.log</span><span class="code-symbol">(</span><span class="code-variable">numero1</span> <span class="code-symbol">+</span> <span class="code-variable">numero2</span><span class="code-symbol">);</span></code></pre>
+        </div>
+
+        <div class="exemplo-card">
+            <h3>Exemplo 4 - Estrutura condicional</h3>
+<pre><code><span class="code-keyword">let</span> <span class="code-variable">idade</span> <span class="code-symbol">=</span> <span class="code-number">18</span><span class="code-symbol">;</span>
+
+<span class="code-keyword">if</span> <span class="code-symbol">(</span><span class="code-variable">idade</span> <span class="code-symbol">>=</span> <span class="code-number">18</span><span class="code-symbol">) {</span>
+    <span class="code-function">console.log</span><span class="code-symbol">(</span><span class="code-string">"Maior de idade"</span><span class="code-symbol">);</span>
+<span class="code-symbol">}</span> <span class="code-keyword">else</span> <span class="code-symbol">{</span>
+    <span class="code-function">console.log</span><span class="code-symbol">(</span><span class="code-string">"Menor de idade"</span><span class="code-symbol">);</span>
+<span class="code-symbol">}</span></code></pre>
+        </div>
+    </div>
+</section>
+
+<section id="Conclusao">
+    <div class="conclusao-content">
+        <div class="Img_conclusao">
+            <img loading="lazy" decoding="async" src="./Trabalho conslusão/img_conclusão.png" alt="Conclusão JavaScript">
+        </div>
+
+        <div>
+            <h2 class="Title">Conclusão</h2>
+
+            <div class="Texto">
+                <p>
+                    <span class="tx-yellow">JavaScript</span> revolucionou a forma como as aplicações web são desenvolvidas.
+                    Sua capacidade de criar páginas dinâmicas, aliada à facilidade de uso e à grande comunidade de
+                    desenvolvedores, tornou a linguagem indispensável para a
+                    <span class="tx-blue">internet moderna</span>.
+                    Mesmo apresentando algumas limitações, JavaScript continua evoluindo e sendo uma das tecnologias mais
+                    importantes para o desenvolvimento de software.
+                </p>
+            </div>
+
+            <div class="referencias">
+                <h3>Referências</h3>
+
+                <ol>
+                    <li>MDN Web Docs - JavaScript</li>
+                    <li>MDN - O que é JavaScript?</li>
+                    <li>MDN - Visão geral da linguagem JavaScript</li>
+                    <li>ECMA International - ECMAScript Official Standard</li>
+                    <li>GeeksforGeeks - Introduction to JavaScript</li>
+                    <li>W3Schools - JavaScript Tutorial</li>
+                    <li>Brendan Eich Official Website</li>
+                    <li>JavaScript: The First 20 Years</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-item">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <h4>Nome completo</h4>
+                <p>Hildeberto Rodrigues Sampaio Junior</p>
+            </div>
+        </div>
+
+        
+
+        <div class="footer-item">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+                <h4>Turma</h4>
+                <p>1º B - Análise e Desenvolvimento de Sistemas</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="./js/script.js" defer></script>
+
+</body>
+</html>
